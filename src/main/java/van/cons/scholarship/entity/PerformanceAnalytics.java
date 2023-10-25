@@ -29,5 +29,4 @@ public class PerformanceAnalytics {
     @JoinColumn(name = "exam_id")
     private Exam exam;
 
-
 }

@@ -33,6 +33,4 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<PerformanceAnalytics> performanceAnalytics;
-
-
 }

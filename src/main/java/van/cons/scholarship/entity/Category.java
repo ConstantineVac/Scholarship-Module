@@ -23,5 +23,4 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Question> questions;
 
-
 }

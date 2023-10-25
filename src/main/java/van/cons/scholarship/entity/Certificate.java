@@ -29,5 +29,4 @@ public class Certificate {
     @JoinColumn(name = "exam_id")
     private Exam exam;
 
-    // Constructors, getters, setters
 }

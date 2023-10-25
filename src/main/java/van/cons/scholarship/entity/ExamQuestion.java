@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "EXAM_QUESTIONS")
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ExamQuestion {
+public class ExamQuestion implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +26,5 @@ public class ExamQuestion {
     @ManyToOne
     @JoinColumn(name = "question_id")
     private Question question;
-
 
 }
